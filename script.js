@@ -233,8 +233,6 @@ console.log('Exercise 10 Result:', calculateGrade(85));
 // - Hadi
 
 // ----------------------------//
-
-// NVM Ex.11 --
 /*
 Exercise 11: createUsername()
 
@@ -251,9 +249,33 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 Complete the exercise in the space below:
 */
 
-// const createUsername = (fn, ln) => {
+const createUsername = (firstName, lastName)=> {
 
-// }
+   const first = firstName[0] + firstName[1] + firstName[2]
+   const last = lastName[0] + lastName[1] + lastName[2]
 
-// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+   
+   const total = firstName.length + lastName.length
+   return first + last + total;
+}
 
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+const numArgs = () =>  {
+const num = numArgs.length;
+return num
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
+// wrong solution :/

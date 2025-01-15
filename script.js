@@ -52,7 +52,7 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (char) => {
-    if (char === 'A'||char === 'E'||char === 'I'||char === 'O'||char === 'U'||char === 'W'||char === 'Y'||char === 'a'||char === 'e'||char === 'i'||char === 'o'||char === 'u'||char === 'w'||char === 'y') {
+    if (char === 'A'||char === 'E'||char === 'I'||char === 'O'||char === 'U'||char === 'a'||char === 'e'||char === 'i'||char === 'o'||char === 'u') {
         return ('vowel');
     }
     return ('Not Vowel')
@@ -73,7 +73,7 @@ Complete the exercise in the space below:
 */
 
 const generateEmail = (name, domain) => {
-const sum = name + domain;
+const sum = name + '@' + domain;
 return sum;
 }
 
@@ -270,10 +270,9 @@ This function should return the count of arguments passed to it when called.
 
 Complete the exercise in the space below:
 */
-
-const numArgs = () =>  {
-const num = numArgs.length;
-return num
+ 
+function numArgs() {
+    return numArgs.length
 }
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
